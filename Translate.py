@@ -9,7 +9,8 @@ People have also told me to make these next few minutes escruciatingly
 embarrassing and to take vengeance of my enemies. Neither will happen.
 
 More than 3 years ago I moved to Novo-Novsk, 
-but worked on new Magnetic Storage for last 40. When I was 8..."""
+but worked on new Magnetic Storage for last 40. When I was 8...
+"""
 
 text_translit = translit(text, 'ru')
 all_numbers = re.findall(r'\d+', text)
@@ -21,4 +22,4 @@ def num_to_words(num):
         result += word
     return result
 
-print(f'{text_translit}\n\n{num_to_words(all_numbers)}')
+print(f'{text_translit}\n{num_to_words(all_numbers)}')
